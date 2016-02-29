@@ -7,11 +7,24 @@
 ]
 'patterns':[
   {
-    'match':'\\b[0-9]+\\b'
-    'name':'constant.numeric'
+    'match':'\\b(?i:(0x\\h*))(\\.[0-9]+)*'
+    'name':'constant.numeric.integer.hexadecimal'
   }
   {
-    'match':'\\b(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector)\\b'
+    'match':'\\b\\-*[0-9]+\\.[0-9]*\\b'
+    'name':'constant.numeric.float'
+  }
+  {
+    'match': '//.*'
+    'name': 'comment.line.double-slash'
+  }
+  {
+    'name':'comment.block.documentation'
+    'begin':'/\\*'
+    'end':'\\*/'
+  }
+  {
+    'match':'\\b(?i)(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector|wait|fail|success|true|false)(?i)\\b'
     'name':'keyword'
   }
   {
