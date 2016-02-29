@@ -1,0 +1,63 @@
+'scopeName': 'source.ai'
+'name': 'ai'
+'fileTypes': ['ai'
+  'behavior'
+  'behaviour'
+  'tree'
+]
+'patterns':[
+  {
+    'match':'\\b[0-9]+\\b'
+    'name':'constant.numeric'
+  }
+  {
+    'match':'\\b(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector)\\b'
+    'name':'keyword'
+  }
+  {
+      'begin': '"'
+      'beginCaptures':
+        '0':
+          'name': 'punctuation.definition.string.begin'
+      'end': '"'
+      'endCaptures':
+        '0':
+          'name': 'punctuation.definition.string.end'
+      'name': 'string.quoted.double'
+      'patterns': [
+        {
+          'include': 'punctuation.definition.string.begin'
+        }
+        {
+          'include': 'punctuation.definition.string.end'
+        }
+        {
+          'match': '\\\\.'
+          'name': 'constant.character.escape'
+        }
+      ]
+    }
+    {
+      'begin': '\''
+      'beginCaptures':
+        '0':
+          'name': 'punctuation.definition.string.begin'
+      'end': '\''
+      'endCaptures':
+        '0':
+          'name': 'punctuation.definition.string.end'
+      'name': 'string.quoted.double'
+      'patterns': [
+        {
+          'include': 'punctuation.definition.string.begin'
+        }
+        {
+          'include': 'punctuation.definition.string.end'
+        }
+        {
+          'match': '\\\\.'
+          'name': 'constant.character.escape'
+        }
+      ]
+    }
+]

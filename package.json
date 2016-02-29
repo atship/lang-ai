@@ -1,0 +1,11 @@
+{
+  "name":"lang-ai",
+  "version":"0.1.0",
+  "description":"Highlights for behaviour trees",
+  "repository":"https://github.com/atship/lang-ai"
+  "license":"MIT",
+  "engines":{
+    "atom":"*",
+    "node":"*"
+  }
+}
