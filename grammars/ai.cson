@@ -15,7 +15,7 @@
     'name':'constant.numeric.float'
   }
   {
-    'match': '//.*'
+    'match': '//.*|#.*'
     'name': 'comment.line.double-slash'
   }
   {
@@ -24,7 +24,7 @@
     'end':'\\*/'
   }
   {
-    'match':'\\b(?i)(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector|wait|fail|success|true|false)(?i)\\b'
+    'match':'\\b(?i)(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector|wait|fail|success|running|task|true|false)(?i)\\b'
     'name':'keyword'
   }
   {
