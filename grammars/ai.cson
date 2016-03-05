@@ -11,7 +11,7 @@
     'name':'constant.numeric.integer.hexadecimal'
   }
   {
-    'match':'\\b\\-*[0-9]+\\.[0-9]*\\b'
+    'match':'\\b[0-9]+(\\.[0-9]*)*\\b'
     'name':'constant.numeric.float'
   }
   {
@@ -24,7 +24,7 @@
     'end':'\\*/'
   }
   {
-    'match':'\\b(?i)(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector|wait|fail|success|running|task|true|false)(?i)\\b'
+    'match':'\\b(?i)(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector|until|wait|fail|success|running|task|true|false)(?i)\\b'
     'name':'keyword'
   }
   {
