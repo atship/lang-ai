@@ -24,7 +24,7 @@
     'end':'\\*/'
   }
   {
-    'match':'\\b(?i)(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector|until|wait|yeah|nope|yes|no|trigger|triggers|tasks|fail|success|running|task|true|false)(?i)\\b'
+    'match':'\\b(?i)(tree|sequence|mute|race|parallel|fallback|random|repeat|while|not|and|or|selector|until|wait|yeah|nope|yes|no|trigger|triggers|tasks|fail|success|running|task|true|false|behavior|behaviour)(?i)\\b'
     'name':'keyword'
   }
   {
